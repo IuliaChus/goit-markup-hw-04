@@ -516,16 +516,15 @@ letter-spacing: 0.03em;
     margin-right: 10px;
     }
     .social-item-footer:hover{
-        background-color: #2196F3;
-        fill:#fff  
+    background-color: #2196F3;
+    fill:#fff  
+ }
+    .instagram{
+    margin: 12px; 
+    width: 20px;
+    height: 20px;
+    fill: #fff;
      }
-     .instagram{
-        margin: 12px; 
-        width: 20px;
-        height: 20px;
-        fill: #fff;
-        
-        }
         
         .twitter{
         margin: 12px; 
