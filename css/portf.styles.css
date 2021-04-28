@@ -27,7 +27,6 @@ background-color: #ffffff;
 font-family: Roboto;
 border-bottom: 1px solid #ECECEC;
 }
-
 .header-container{
 display: flex;
 align-items: center;
@@ -36,7 +35,6 @@ padding-right: 15px;
 margin-left: auto;
 margin-right: auto;    
 }
-
 .container{
 width: 1200px;
 padding: 0px 15px;
@@ -123,17 +121,6 @@ letter-spacing: 0.02em;
 color: var(--accent-color);
 }
 
-.nav-contacts{
-display: flex;
-margin-left: 331px;
-padding: 0;
-}
-
-.nav-icon:hover,
-.nav-icon:focus{
-color:var(--accent-color);
-}
-
 .contacts-mail{
 color: var(--primery-text-color);
 font-family: Roboto;
@@ -143,12 +130,19 @@ font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
 padding-right: 50px;
+display: inline-flex;
+align-items: center;
 }
 
-.nav-icon{
-display: flex;
+.contacts-mail:hover svg,
+.contacts-mail:focus svg{
+fill: var(--accent-color);
 }
-   
+.contacts-mail:hover,
+.contacts-mail:focus {
+color:var(--accent-color);
+}
+
 .letter{
 width: 16px;
 height: 12px;
@@ -157,23 +151,6 @@ margin-right: 10px;
 fill: #757575;
 cursor: pointer;
 }
-
-.letter:hover,
-.letter:focus{
-fill: #2196F3;
-}
-
-.contacts-mail:hover,
-.contacts-mail:focus {
-color:var(--accent-color);
-font-family: Roboto;
-font-style: 400;
-font-weight: 500;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.02em;
-}
-
 .contacts-tel{
 color: var(--primery-text-color);
 font-family: Roboto;
@@ -182,17 +159,17 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+display: inline-flex;
+align-items: center;
 }
 
 .contacts-tel:hover,
 .contacts-tel:focus{
 color:var(--accent-color);
-font-family: Roboto;
-font-style: normal;
-font-weight: 500;
-font-size: 14px;
-line-height: 16px;
-letter-spacing: 0.02em;
+}
+.contacts-tel:hover svg,
+.contacts-tel:focus svg{
+fill: #2196F3;
 }
 
 .phone{
@@ -201,13 +178,12 @@ height: 16px;
 padding: 0;
 margin-right: 10px;
 fill: #757575;
-cursor: pointer;
+cursor: pointer; 
 }
 
-.phone:hover,
-.phone:focus{
-fill: #2196F3;
-}
+
+
+
 
 
 .main{
@@ -270,6 +246,7 @@ box-sizing: border-box;
 margin-right: 30px;
 margin-bottom: 30px; 
 width: 370px; 
+cursor: pointer;
 }
 .box:hover,
 .box:focus{
@@ -309,18 +286,18 @@ line-height: 1.9;
 margin: 0;
 }
 
+
+
 .footer-bg{
 background-color: var( --background-color);
 padding-top: 60px;
 padding-bottom: 60px;    
 }
-
 .footer{
 display: inline-block;
 margin-right: 70px;
 align-items: center;
 }
-
 .footer-logo{
 color: var(--accent-color);  
 font-family: Raleway;
@@ -356,11 +333,6 @@ line-height: 1.71;
 letter-spacing: 0.03em;
 margin-bottom: 9px;       
 }
-
-.footer-item{
-margin-bottom: 9px;
-}
-
 .contacts{
 padding: 0;
 }
@@ -391,8 +363,9 @@ letter-spacing: 0.03em;
  
 .footer-socialmedia{
 display: flex;
+align-items: baseline;
 padding: 0;
-align-items: center;
+margin: 0;
 }
     
 .join{
@@ -404,31 +377,35 @@ margin: 0;
 }
 
 .footer-box{
-display: inline-block;
 width: 206px;
 padding: 0px;
+}
+.foot{
+display: flex;
+align-items: baseline;
 }
 
 .footer-icon{
 fill: #fff;
 }
-.footer-icon:hover,
-.footer-icon:focus{
-background-color: #2196F3;
-}
-    
+  
 .footer-fb{
-display: inline-block;
+display: flex;
 width: 44px;
 height: 44px;
+align-items: center;
+justify-content: center;
 }
 
 .footer-fb:hover,
 .footer-fb:focus{
-fill: #fff;
 background-color: #2196F3;
 border-radius: 50%;
 }
+.footer-fb:hover svg,
+.footer-fb:focus svg{
+fill: #fff;
+} 
 
 .social-item-footer{
 display: inline-block;
@@ -440,33 +417,25 @@ margin-top: 20px;
 margin-right: 10px;
 }
 
-.social-item-footer:hover{
-background-color: #2196F3;
-fill:#fff  
-}
 .instagram{
-margin: 12px; 
 width: 20px;
 height: 20px;
 fill: #fff;
 }
         
 .twitter{
-margin: 12px; 
 width: 20px;
 height: 20px;
 fill: #fff;
 }
 
 .facebook{
-margin: 12px; 
 width: 20px;
 height: 20px;
 fill: #fff;
 }
        
 .linkedin{
-margin: 12px; 
 width: 20px;
 height: 20px;
 fill: #fff;
